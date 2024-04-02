@@ -32,21 +32,12 @@ export const Default: Story = {
   }
 };
 
-export const Primary: Story = {
-  args: {
-    variant: 'contained',
-    size: 'md',
-    color: 'primary',
-    children: 'Button 1'
-  }
-};
-
 export const Secondary: Story = {
   args: {
     variant: 'contained',
     size: 'md',
     color: 'secondary',
-    children: 'Button 2'
+    children: 'Button 1'
   }
 };
 
@@ -55,6 +46,6 @@ export const SecondaryLight: Story = {
     variant: 'contained',
     size: 'md',
     color: 'secondary-light',
-    children: 'Button 3'
+    children: 'Button 2'
   }
 };
