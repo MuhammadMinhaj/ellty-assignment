@@ -15,16 +15,16 @@ export const variationClasses: VariationStyles = /*tw*/ {
     text: 'text-primary'
   },
   secondary: {
-    contained: 'bg-secondary text-primary hover:bg-secondary-light',
+    contained: 'bg-secondary text-primary hover:bg-secondary-light active:bg-secondary',
     outlined:
-      'border border-secondary text-secondary hover:border-secondary-light hover:text-secondary-light',
-    text: 'text-secondary hover:text-secondary-light'
+      'border border-secondary text-secondary hover:border-secondary-light hover:text-secondary-light active:border-secondary active:text-secondary',
+    text: 'text-secondary hover:text-secondary-light active:text-secondary'
   },
   'secondary-light': {
-    contained: 'bg-secondary-light text-primary hover:bg-secondary',
+    contained: 'bg-secondary-light text-primary hover:bg-secondary active:bg-secondary-light',
     outlined:
-      'border border-secondary-light text-secondary-light hover:border-secondary hover:text-secondary',
-    text: 'text-secondary-light hover:text-secondary'
+      'border border-secondary-light text-secondary-light hover:border-secondary hover:text-secondary active:border-secondary-light active:text-secondary-light',
+    text: 'text-secondary-light hover:text-secondary active:text-secondary-light'
   }
 };
 
