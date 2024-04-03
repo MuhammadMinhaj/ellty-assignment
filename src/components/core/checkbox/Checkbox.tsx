@@ -10,7 +10,7 @@ import {
 } from './Checkbox.styles';
 
 // Checkbox Props
-type CheckboxProps = InputHTMLAttributes<HTMLInputElement> & {
+export type CheckboxProps = InputHTMLAttributes<HTMLInputElement> & {
   rounded?: boolean;
   rootClassName?: string;
   labelClassName?: string;
