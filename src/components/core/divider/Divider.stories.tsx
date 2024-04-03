@@ -25,13 +25,13 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     direction: 'horizontal',
-    className: 'w-[300px]'
+    className: 'min-w-[300px]'
   }
 };
 
 export const VerticalDivider: Story = {
   args: {
     direction: 'vertical',
-    className: 'h-[300px]'
+    className: 'min-h-[300px]'
   }
 };
