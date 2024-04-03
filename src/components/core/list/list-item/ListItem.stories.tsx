@@ -38,7 +38,7 @@ export const ListItemCheckbox: Story = {
         List Item
       </label>
 
-      <Checkbox enableGroupHover id="l11" />
+      <Checkbox enableGroupEffect id="l11" rounded />
     </ListItem>
   )
 };
