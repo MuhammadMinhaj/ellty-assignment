@@ -16,7 +16,7 @@ const meta = {
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {},
   // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
-  args: { onClick: fn(), className: /*tw*/ ' bg-border-gray-light' }
+  args: { onClick: fn(), className: /*tw*/ '' }
 } satisfies Meta<typeof ListItem>;
 
 export default meta;
@@ -33,9 +33,12 @@ export const Default: Story = {
 
 export const ListItemCheckbox: Story = {
   render: () => (
-    <ListItem size="md" className="min-w-[300px] bg-border-gray-light">
-      List Item
-      <Checkbox />
+    <ListItem size="md" className="min-w-[370px] group">
+      <label htmlFor="l11" className="flex-1">
+        List Item
+      </label>
+
+      <Checkbox enableGroupHover id="l11" />
     </ListItem>
   )
 };
