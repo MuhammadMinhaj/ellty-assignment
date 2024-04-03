@@ -1,12 +1,20 @@
 import clsx from 'clsx';
 import { FC, InputHTMLAttributes } from 'react';
-import { inputClasses, labelClasses, rootClasses, roundedClass } from './Checkbox.styles';
+import {
+  inputClasses,
+  labelClasses,
+  labelGroupActiveClasses,
+  labelGroupHoverClasses,
+  rootClasses,
+  roundedClass
+} from './Checkbox.styles';
 
 // Checkbox Props
 type CheckboxProps = InputHTMLAttributes<HTMLInputElement> & {
   rounded?: boolean;
   rootClassName?: string;
   labelClassName?: string;
+  enableGroupEffect?: boolean;
 };
 
 // Checkbox
@@ -15,6 +23,7 @@ const Checkbox: FC<CheckboxProps> = ({
   rootClassName,
   labelClassName,
   rounded = true,
+  enableGroupEffect = false,
   id = 'checkbox',
   ...rest
 }) => {
@@ -27,7 +36,9 @@ const Checkbox: FC<CheckboxProps> = ({
    * Label classes
    * */
   const combinedLabelClasses = /*tw*/ clsx(labelClasses, labelClassName, {
-    [roundedClass]: rounded
+    [roundedClass]: rounded,
+    [labelGroupHoverClasses]: enableGroupEffect,
+    [labelGroupActiveClasses]: enableGroupEffect
   });
 
   /**
