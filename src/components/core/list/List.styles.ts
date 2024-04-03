@@ -1,7 +1,7 @@
 /**
  * Defined default styles
  */
-export const commonClasses: string = /*tw*/ 'min-w-[150px] py-[5px] list-none w-full';
+export const commonClasses: string = /*tw*/ 'list-none w-full';
 
 /**
  * Defined shadows style
