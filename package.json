@@ -5,12 +5,13 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
     "staged": "lint-staged",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build -o docs --docs"
   },
   "author": {
     "name": "Sayed Muhammad Minhaj",
