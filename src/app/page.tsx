@@ -1,8 +1,9 @@
+import { TaskBoard } from '@/components/templates/task-board';
+
 export default function Home() {
   return (
-    <main className="container">
-      <h1>Ellty Assignment v1.0</h1>
-      Updated Next
+    <main className="flex flex-col justify-center items-center h-screen">
+      <TaskBoard className="w-[370px]" />
     </main>
   );
 }
