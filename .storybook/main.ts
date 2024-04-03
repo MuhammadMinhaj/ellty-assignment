@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/nextjs';
+import path from 'path';
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
@@ -9,6 +10,17 @@ const config: StorybookConfig = {
     '@chromatic-com/storybook',
     '@storybook/addon-interactions'
   ],
+  webpackFinal(config, options) {
+    config.resolve.modules = [path.resolve(__dirname, ".."), "node_modules"];
+
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      "@/components": path.resolve(__dirname, "../src/components"),
+      "@/core": path.resolve(__dirname, "../src/components/core"),
+      "@/features": path.resolve(__dirname, "../src/components/features"),
+    };
+    return config
+  },
   framework: {
     name: '@storybook/nextjs',
     options: {}
