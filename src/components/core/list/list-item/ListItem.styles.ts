@@ -18,4 +18,5 @@ export const sizeClasses: SizeStyles = /*tw*/ {
 /**
  * Defined divider style
  */
-export const dividerClass: string = /*tw*/ 'border border-b-border-gray-main';
+export const dividerClass: string =
+  /*tw*/ 'border-b-[1px] border-b-border-gray-main last:border-b-0';
