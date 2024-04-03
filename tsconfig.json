@@ -1,6 +1,11 @@
 {
   "compilerOptions": {
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": [],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -18,11 +23,26 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
-      "@/core/*": ["./src/components/core/*"],
-      "@/features/*": ["./src/components/features/*"],
+      "@/*": [
+        "./src/*"
+      ],
+      "@/core/*": [
+        "./src/components/core/*"
+      ],
+      "@/features/*": [
+        "./src/components/features/*"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "build-web/types/**/*.ts",
+    "build-web/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
