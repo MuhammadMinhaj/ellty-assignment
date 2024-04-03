@@ -1,5 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Site Links
+
+- **Live Link:** [Ellty Assignment v1.0](https://ellty-assignment-by-minhaj.vercel.app)
+- **Documentation Link:** [Ellty Assignment Documentation v1.0](https://ellty-assignment-docs-by-minhaj.vercel.app)
+
+- **Repository Link:** [Ellty Assignment Source](https://github.com/MuhammadMinhaj/ellty-assignment)
+
 ## Getting Started
 
 First, run the development server:
